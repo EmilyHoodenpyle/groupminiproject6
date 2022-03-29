@@ -12,6 +12,31 @@
   </head>
 
   <body>
-    
+      <main>
+        <div class="flex-row justify-space-between">
+            <h3 class="">Library of Congress Search Engine</h3>
+            <form id="search-form" class="card-body">
+                <input name="search" id="search" type="text" autofocus="true" class="form-input"/>
+                <select name="select" id="select">
+                    <option value="all">Select</option>
+                    <option value="maps">Maps</option>
+                    <option value="audio">Audio</option>
+                    <option value="photos">Photos</option>
+                    <option value="manuscripts">Manuscripts</option>
+                    <option value="newspapers">Newspapers</option>
+                    <option value="film-and-videos">Film & Videos</option>
+                    <option value="notated-music">Notated Music</option>
+                    <option value="websites">Websites</option>
+                </select>
+                <button type="submit" class="btn">SEARCH</button>
+                <button type="goback" class="btn">GO BACK</button>
+            </form>
+        </div>
+
+        <div class="col-12 col-md-8">
+            <h2 class="subtitle">Showing Results for: <span id="repo-search-term"></span></h2>
+            <div id="repos-container" class="list-group"></div>
+          </div>
+      </main>
   </body>
   </html>
